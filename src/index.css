@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #DDDDDD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer{
+  border: grey solid 1px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 100%;
+  background-color: white;
+}
+.selectedColumn {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-top: 15px;
+  border-bottom: lightgray solid 2px;
+}
+.selectedColumn>div:first-child {
+  color: grey;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.removeButton {
+  color: black;
+}
+.selectedUsersContainer{
+  font-weight: bold;
+
+  margin-right: 8px;
+  font-size: 14px;
+  color: lightseagreen;
+  display: flex;
+}
+.userRowContainer {
+  padding-top: 15px;
+  border-bottom: lightgray solid 1px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.checkbox {
+  background-color: grey;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('check.png');
+}
+
+
+.checkbox-checked {
+  background-color: aquamarine;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('check.png');
+}
+
+
+.userAavatar {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+}
+.userNameCol {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userNameCol>div:first-child {
+  font-weight: bold;
+  color: navy;
+  margin-bottom: 5px;
+}
+
+.userNameCol>div:last-child {
+  color: grey;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.t2Container {
+  margin-top: 100px;
+  width: 600px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #009788;
+  align-items: center;
+}
+
+.firsCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 425px;
+  height: 140px;
+  z-index: 500;
+  padding:10px 20px;
+  border-radius: 3px;
+  background: -webkit-linear-gradient(-155deg, white 75%, #5E9EA0 25%);
+  -webkit-box-shadow: 0px 50px 59px -27px rgba(148,150,156,0.48);
+  -moz-box-shadow: 0px 50px 59px -27px rgba(148,150,156,0.48);
+  box-shadow: 0px 50px 59px -27px rgba(148,150,156,0.48);
+  /*background: -webkit-linear-gradient(45deg, rgba(10, 107, 99, 0.63) 0%,rgba(10, 107, 99, 0.63) 13%,rgba(244,244,244,1) 33%)*/
+}
+
+.devFace {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.cliqueinc.com/cache/posts/167536/5-makeup-tricks-for-girls-with-narrow-faces-167536-main.640x0c.jpg");
+}
+
+.aboutDev {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-left: 20px;
+}
+
+
+.aboutDev span:first-child {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.textGren {
+  margin-top: 2px;
+  font-size: 19px;
+  font-weight: 400;
+  font-style: italic;
+  color: #439E91;
+}
+
+.aboutDev span:last-child {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #A5A5A5;
+  word-break: break-word;
+}
+
+
+.secondCard {
+  padding: 5px;
+  background-color: #E4E4E4;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 425px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondCard>img {
+  margin: 0 5px;
+}
+
+
+.faceAndTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 100px;
+  background-color: #E9F4E6;
+
+}
+
+.faceOuter {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: white;
+  -webkit-box-shadow: 10px 0px 5px -4px rgba(0,0,0,0.1);
+  -moz-box-shadow: 10px 0px 5px -4px rgba(0,0,0,0.1);
+  box-shadow: 10px 0px 5px -4px rgba(0,0,0,0.1);
+  margin-left: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.faceInner {
+  width: 95px;
+  height: 95px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.cliqueinc.com/cache/posts/167536/5-makeup-tricks-for-girls-with-narrow-faces-167536-main.640x0c.jpg");
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  margin-left: -30px;
+
+}
+.Text span:first-child{
+  color: #949C95;
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.Text span:last-child{
+  color: #949C95;
+  font-size: 11px;
+  font-weight: 100;
+}
+
+.Menu {
+  width: 100px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MenuImage {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+.headerContainer{
+  display: flex;
+  height: 80px;
+  border-bottom: 2px solid #E5E5E5;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+
+}
+
+.contentContainer{
+  display: flex;
+  flex-direction: column;
+}
+.mainInfoContainer{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.mainImageContainerOuter{
+  width: 520px;
+  height: 520px;
+  border-radius: 100%;
+  background-color: #48C5BB;
+  margin-top: -100px;
+  margin-left: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainImageContainerInnerOuter{
+  width: 440px;
+  height: 440px;
+  border-radius: 100%;
+  background-color: #605995;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainImageContainerInner{
+  width: 360px;
+  height: 360px;
+  border-radius: 100%;
+  background-color: #45406B;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainImageContainerInner>div{
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.cliqueinc.com/cache/posts/167536/5-makeup-tricks-for-girls-with-narrow-faces-167536-main.640x0c.jpg");
+
+}
+.distanceContainer{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: .75;
+}
+.distanceContainer span:first-child{
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.distanceContainer span:last-child{
+  font-size: 60px;
+  font-weight: 600;
+  margin-left: 18px;
+}
+
+.nameContainer{
+  display: flex;
+  max-width: 550px;
+  width: 100%;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  flex-direction: column;
+  align-self: flex-end;
+}
+.nameContainer>span{
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+.fullInfoContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 90px 60px 90px;
+}
+.fullInfoContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+.fullInfoContent>span{
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+.footerContainer{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2px solid #e5e5e5;
+}
+.active{
+  width: 85px;
+  height: 85px;
+  border-radius: 10px;
+  background-color: #332F4F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform:translate(0px,-15px) scale(1.1);
+  box-shadow: rgba(0,0,0,.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
